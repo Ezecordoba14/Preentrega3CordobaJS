@@ -78,10 +78,10 @@ h3 {
   font-size: 25px;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* --------------BARRA DE NAVEGACION----------- */
@@ -108,7 +108,7 @@ nav .navbar-brand {
   color: white;
 }
 nav .navbar-brand:hover {
-  text-shadow: 2px 2px 20px #e40517;
+  text-shadow: 0px 0px 10px #e40517, 0px 0px 40px #e40517, 0px 0px 80px #e40517;
 }
 
 /* ---------------------------------------- */
@@ -118,12 +118,12 @@ nav .navbar-brand:hover {
   display: flex;
   flex-direction: column;
 }
-img.card-img-top{
+img.card-img-top {
   height: 200px;
   border-bottom: 2px solid #f30014;
 }
 
-a.btn.btn-primary{
+a.btn.btn-primary {
   background-color: #f30014;
   border-radius: 5px;
   border: 2px solid #f30014;
@@ -132,11 +132,11 @@ a.btn.btn-primary{
   font-weight: 800;
 }
 
-a.btn.btn-primary:hover{
+a.btn.btn-primary:hover {
   background-color: #cf0011;
 }
 
-.card{
+.card {
   margin: 10px;
   border-radius: 0;
   transition: 0.2s;
@@ -147,7 +147,6 @@ a.btn.btn-primary:hover{
   transition: 0.2s;
 }
 
-
 section.reservas1 {
   display: flex;
   flex-wrap: wrap;
@@ -156,12 +155,11 @@ section.reservas1 {
   align-items: center;
 }
 
-
-.articleDescription{
-  overflow:auto;
+.articleDescription {
+  overflow: auto;
 }
 
-.articleDescription::-webkit-scrollbar{
+.articleDescription::-webkit-scrollbar {
   width: 2px;
   border-radius: 3px;
 }
@@ -171,11 +169,9 @@ section.reservas1 {
   border-radius: 3px;
 }
 
-
-p.card-text{
+p.card-text {
   max-height: 100px;
 }
-
 
 h2 {
   color: #121212;
@@ -287,7 +283,7 @@ label input:focus {
   margin: 5px;
 }
 
-#divtextbooking{
+#divtextbooking {
   border-top: 3px solid #f30014;
 }
 
@@ -304,7 +300,7 @@ label input:focus {
   color: #f30013;
 }
 
-.spanDNIPasaporte{
+.spanDNIPasaporte {
   color: #000;
   font-weight: 800;
   font-family: "Raleway", sans-serif;
@@ -413,3 +409,21 @@ label input:focus {
 }
 
 /* --------------------------------------------- */
+
+@keyframes parpadeo {
+  0% {
+    text-shadow: 0px 0px 10px #e40517, 0px 0px 40px #e40517,
+      0px 0px 80px #e40517;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0px 0px 10px #e40517, 0px 0px 40px #e40517,
+      0px 0px 80px #e40517;
+  }
+}
+
+.parpadeo {
+  animation: parpadeo 10s infinite;
+}
