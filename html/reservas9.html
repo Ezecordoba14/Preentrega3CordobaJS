@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../estilos/stylereserva.css">
+    <title>Reservas - Hospedate.com</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar   navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="tilteBrand" href="../index.html">Hospedate.com</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Reservá tu hotel</h2>
+        <hr>
+
+        <section class="sectionForm">
+            <form action="" id="divForm">
+                <div id="personalInformation">
+                    <section id="inputPersonal">
+                        <div class="divSubtitle">
+                            <h3>Ingrese sus datos para procesar su reserva:</h3>
+                            <p>Igual a como aparece en el DNI o pasaporte con el que te vas a hospedar</p>
+                        </div>
+
+
+                        <label class="labelForm">
+
+                            <input type="text" required id="name" class="form-input" placeholder=" ">
+                            <span id="inputName" class="spanPersonal">Nombre/s</span>
+                        </label>
+
+                        <label class="labelForm">
+
+                            <input type="text" required id="lastName" class="form-input" placeholder=" ">
+                            <span id="inputLastName" class="spanPersonal">Apellido/s</span>
+                        </label>
+                    </section>
+
+                    <section id="inputDNI">
+                        <h3>Documentacion</h3>
+                        <div>
+                            <div>
+                                <label>
+                                    <input type="radio" name="DNI-Pasaporte" id="DNIRadio" class="checkRadio" required>
+                                    <span class="spanDNIPasaporte">DNI</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="DNI-Pasaporte" id="pasaportRadio" class="checkRadio"
+                                        required>
+                                    <span class="spanDNIPasaporte">Pasaporte</span>
+                                </label>
+                            </div>
+                            <label class="labelForm">
+                                <input type="number" required id="numberDNI" class="form-input" placeholder=" ">
+                                <span id="numberIdentification" class="spanPersonal">Número</span>
+                            </label>
+                        </div>
+
+
+                    </section>
+
+                    <section>
+                        <h3>Datos de contacto</h3>
+                        <label class="labelForm">
+                            <input type="number" required id="numberContact" class="form-input" placeholder=" " min="0">
+                            <span class="spanPersonal">Teléfono</span>
+                        </label>
+                        <label class="labelForm">
+                            <input type="email" required id="emailContact" class="form-input" placeholder=" ">
+                            <span class="spanPersonal">Email</span>
+                        </label>
+                    </section>
+
+                    <h3>Fechas de Alojamiento</h3>
+                    <section class="sectionDate">
+                        <div class="divDate">
+                            <label for="date">
+                                <span class="spanDate">
+                                    Fecha de Entrada
+                                </span>
+                            </label>
+                            <div class="infoDate">
+                                <input type="date" name="dateEntrace" id="dateEntrace" class="inputDate" required>
+                                <p class="pDate" id="pDateEntrace"></p>
+                            </div>
+                        </div>
+                        <div class="divDate">
+                            <label for="date">
+                                <span class="spanDate">
+                                    Fecha de Salida
+                                </span>
+                            </label>
+                            <div class="infoDate">
+                                <input type="date" name="dateExit" id="dateExit" class="inputDate" disabled="true" required>
+                                <p class="pDate" id="pDateExit">as</p>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="resultForm"></div>
+                    <button type="button" id="btnBooking">Reservar</button>
+                </div>
+            </form>
+            <section id="confirmBooking">
+                <h3 id='titleBooking'>Reservas:</h3>
+                <div id="divtextbooking">
+                    <p id="textbooking"></p>
+                </div>
+                <div id="divClearBooks">
+                    <button id="clearBooks">Cancelar todas las Reservas</button>
+                </div>
+            </section>
+        </section>
+
+    </main>
+    <footer class="pie-pagina">
+        <section class="grupo-1">
+            <div class="box">
+                <div class="conta">
+                    <h4> Contactanos</h4>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>+54 112345679</span>
+                </div>
+                <p>Córdoba capital, Córdoba, Argentina</p>
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4048.5760209423515!2d-64.18404445883074!3d-31.429742677942105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28ddf861391%3A0xc0fdcfc930551a76!2sPlaza%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1679707043676!5m2!1ses!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="maps"></iframe>
+            </div>
+            <div class="box">
+                <h4>Horarios</h4>
+                <p>Lunes a sabado de las 9:30 a 20:30</p>
+                <h4>Seguinos en nuestras redes</h4>
+                <a aria-label="redes" href="https://www.facebook.com/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i>
+                </a>
+                <a aria-label="redes" href="https://www.instagram.com/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a aria-label="redes" href="https://twitter.com/" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a aria-label="redes" href="https://www.youtube.com/" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
+        <section class="grupo-2">
+            <p>Copyright © Todos los Derechos Reservados</p>
+        </section>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../scripts/reservas.js"></script>
+</body>
+
+</html>

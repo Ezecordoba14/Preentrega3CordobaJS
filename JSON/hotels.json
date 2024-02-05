@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Palermo Essence",
+        "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/451478121.jpg?k=1d7a085f72061ece7ec5931adb83e635781d1862711e19211c29e955dcb005eb&o=&hp=1",
+        "price": 52000,
+        "description": "El Palermo Essence Se encuentra a 1,6 km del jardín japonés de Buenos Aires y ofrece wifi gratis en todas las instalaciones.",
+        "ubication": "Buenos Aires",
+        "id": 1
+    },
+    {
+        "name": "Stay suites",
+        "img": "https://lh3.googleusercontent.com/p/AF1QipPuB4JaP1d-zGYDeE9FXJla9_c4j_3Y7Q0wNoJZ=s680-w680-h510",
+        "price": 36000,
+        "description": "Los alojamientos disponen de aire acondicionado, sala de estar con TV de pantalla plana, cocina con microondas y minibar, caja fuerte y baño privado con pantuflas y secador de pelo.",
+        "ubication": "Córdoba",
+        "id": 2
+    },
+    {
+        "name": "Millennium",
+        "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/20964283.jpg?k=bd0e3c47c5ea2f16120e51f2b966ce137df17ed4d95b88c0538c627cdfc2560e&o=&hp=1",
+        "price": 76500,
+        "description": "El Hotel Millenium se encuentra a 2 km de la zona comercial. Ofrece habitaciones con conexión Wi-Fi gratuita y TV por cable, un restaurante, un gimnasio, una bañera de hidromasaje y aparcamiento gratuito.",
+        "ubication": "La Rioja",
+        "id": 3
+    },
+    {
+        "name": "Howard Johnson",
+        "img": "https://lh3.googleusercontent.com/p/AF1QipMR4zDOgm8YnPW4iY6foOmr0rormj8Kn2sy3fMs=s680-w680-h510",
+        "price": 45900,
+        "description": "Un hotel urbano de diseño moderno y elegante. Ubicado en pleno centro de la ciudad de Córdoba, es el lugar perfecto para ejecutivos, parejas y familias buscan comodidad y servicio de excelencia.",
+        "ubication": "Córdoba",
+        "id": 4
+    },
+    {
+        "name": "Amérian Córdoba",
+        "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/30733085.jpg?k=c8841acb992960e3502a1e5210c92f75f730b377efe36c7c5666a047cceebc7b&o=&hp=1",
+        "price": 74000,
+        "description": "Este hotel superior de 4 estrellas está situado en el centro de Córdoba y muy bien comunicado con toda la ciudad. Cuenta con un sauna, una pileta de temporada y un gimnasio.",
+        "ubication": "Córdoba",
+        "id": 5
+    },
+    {
+        "name": "Palermo Essence",
+        "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/451478121.jpg?k=1d7a085f72061ece7ec5931adb83e635781d1862711e19211c29e955dcb005eb&o=&hp=1",
+        "price": 52000,
+        "description": "El Palermo Essence Se encuentra a 1,6 km del jardín japonés de Buenos Aires y ofrece wifi gratis en todas las instalaciones.",
+        "ubication": "Buenos Aires",
+        "id": 6
+    },
+    {
+        "name": "Stay suites",
+        "img": "https://lh3.googleusercontent.com/p/AF1QipPuB4JaP1d-zGYDeE9FXJla9_c4j_3Y7Q0wNoJZ=s680-w680-h510",
+        "price": 36000,
+        "description": "Los alojamientos disponen de aire acondicionado, sala de estar con TV de pantalla plana, cocina con microondas y minibar, caja fuerte y baño privado con pantuflas y secador de pelo.",
+        "ubication": "Córdoba",
+        "id": 7
+    },
+    {
+        "name": "Millennium",
+        "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/20964283.jpg?k=bd0e3c47c5ea2f16120e51f2b966ce137df17ed4d95b88c0538c627cdfc2560e&o=&hp=1",
+        "price": 76500,
+        "description": "El Hotel Millenium se encuentra a 2 km de la zona comercial. Ofrece habitaciones con conexión Wi-Fi gratuita y TV por cable, un restaurante, un gimnasio, una bañera de hidromasaje y aparcamiento gratuito.",
+        "ubication": "La Rioja",
+        "id": 8
+    },
+    {
+        "name": "Howard Johnson",
+        "img": "https://lh3.googleusercontent.com/p/AF1QipMR4zDOgm8YnPW4iY6foOmr0rormj8Kn2sy3fMs=s680-w680-h510",
+        "price": 45900,
+        "description": "Un hotel urbano de diseño moderno y elegante. Ubicado en pleno centro de la ciudad de Córdoba, es el lugar perfecto para ejecutivos, parejas y familias buscan comodidad y servicio de excelencia.",
+        "ubication": "Córdoba",
+        "id": 9
+    },
+    {
+        "name": "Amérian Córdoba",
+        "img": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/30733085.jpg?k=c8841acb992960e3502a1e5210c92f75f730b377efe36c7c5666a047cceebc7b&o=&hp=1",
+        "price": 74000,
+        "description": "Este hotel superior de 4 estrellas está situado en el centro de Córdoba y muy bien comunicado con toda la ciudad. Cuenta con un sauna, una pileta de temporada y un gimnasio.",
+        "ubication": "Córdoba",
+        "id": 10
+    }
+]

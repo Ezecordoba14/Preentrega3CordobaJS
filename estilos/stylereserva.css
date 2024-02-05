@@ -1,5 +1,4 @@
-/* ----------------Colores---------------------- */
-/* ----------------Colores----------------------- */
+
 /* ----------------FUENTES----------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&family=Quicksand:wght@300&family=Tilt+Neon&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap");
@@ -116,8 +115,27 @@ nav .navbar-brand:hover {
 
 .card-body {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.card-body h6 {
+  font-size: 25px;
+}
+
+img.img-fluid.rounded-start {
+  max-height: 240px;
+  width: 400px;
+  height: 100%;
+}
+
+#divLeft{
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
+
 img.card-img-top {
   height: 200px;
   border-bottom: 2px solid #f30014;
@@ -137,6 +155,7 @@ a.btn.btn-primary:hover {
 }
 
 .card {
+  max-width: 1200px !important;
   margin: 10px;
   border-radius: 0;
   transition: 0.2s;
@@ -147,13 +166,16 @@ a.btn.btn-primary:hover {
   transition: 0.2s;
 }
 
+
+
 section.reservas1 {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+
 
 .articleDescription {
   overflow: auto;
@@ -275,7 +297,8 @@ label input:focus {
   align-items: center;
   background-color: #121212;
   box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
+  width: auto;
+  max-width: 800px;
   color: #fff;
 }
 
@@ -285,6 +308,18 @@ label input:focus {
 
 #divtextbooking {
   border-top: 3px solid #f30014;
+  max-height: 550px;
+  overflow: auto;
+}
+
+#divtextbooking::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 4px;
+  border-radius: 3px;
+}
+#divtextbooking::-webkit-scrollbar-thumb {
+  background-color: #f30013;
+  border-radius: 3px;
 }
 
 #confirmBooking p {
@@ -292,8 +327,30 @@ label input:focus {
   display: flex;
   color: #121212;
   background-color: #fff;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 50px;
 
   /* border-top: 3px solid #f30013; */
+}
+
+#confirmBooking button{
+  margin-left: 5px;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  background: #121212;
+  border-radius: 30px;
+  box-shadow: 5px 5px 0px 0px #f30013;
+  transition: 0.1s;
+}
+
+#confirmBooking button:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 0 #00000000;
+  transition: 0.1s;
 }
 
 #resultForm h4 {
@@ -339,28 +396,61 @@ label input:focus {
 .sectionDate {
   display: flex;
   justify-content: center;
+  justify-content: space-around;
 }
 .divDate {
   margin: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .inputDate {
   padding: 10px;
-  margin-top: 5px;
   background-color: #f30014;
   border-radius: 5px;
   border: 2px solid #f30014;
   font-family: "Raleway", sans-serif;
   color: white;
   font-weight: 800;
-  /* box-shadow: 1px 1px #121212; */
+  width: 40px;
+}
+#dateExit{
+  color: #ffffff;
+  background-color: #9e9e9e;
+  border-color: #9e9e9e ;
 }
 
-.inputDate input {
-  margin: 20px;
+
+#divClearBooks{
+  width: 800px;
+  max-width: 900px;
+  display: block;
+  background-color: white;
+  display: flex;
+  justify-content: center;
 }
+#clearBooks{
+  margin: 10px;
+}
+
+
+.infoDate{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+  border-radius: 0 5px 5px 0;
+}
+
+.infoDate p{
+  padding: 9px;
+  padding-left: 10px;
+  display: none;
+  transition: 0.5s;
+  color: #cf0011;
+}
+
 /* ------------RESERVAS------------ */
 /* ---------------PIE DE PAGINA------------------- */
 .pie-pagina {
@@ -397,6 +487,7 @@ label input:focus {
   margin-bottom: 15px;
   text-align: center;
   font-size: 25px;
+  color: white;
 }
 .pie-pagina .grupo-1 .box .mapa {
   align-items: center;

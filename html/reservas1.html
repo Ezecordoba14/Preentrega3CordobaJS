@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/stylereserva.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../estilos/stylereserva.css">
     <title>Reservas - Hospedate.com</title>
 </head>
 
@@ -12,7 +16,7 @@
     <header>
         <nav class="navbar   navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" id="tilteBrand" href="./index.html">Hospedate.com</a>
+                <a class="navbar-brand" id="tilteBrand" href="../index.html">Hospedate.com</a>
             </div>
         </nav>
     </header>
@@ -53,7 +57,8 @@
                                     <span class="spanDNIPasaporte">DNI</span>
                                 </label>
                                 <label>
-                                    <input type="radio" name="DNI-Pasaporte" id="pasaportRadio" class="checkRadio" required>
+                                    <input type="radio" name="DNI-Pasaporte" id="pasaportRadio" class="checkRadio"
+                                        required>
                                     <span class="spanDNIPasaporte">Pasaporte</span>
                                 </label>
                             </div>
@@ -69,7 +74,7 @@
                     <section>
                         <h3>Datos de contacto</h3>
                         <label class="labelForm">
-                            <input type="number" required id="numberContact" class="form-input" placeholder=" ">
+                            <input type="number" required id="numberContact" class="form-input" placeholder=" " min="0">
                             <span class="spanPersonal">Teléfono</span>
                         </label>
                         <label class="labelForm">
@@ -81,12 +86,15 @@
                     <h3>Fechas de Alojamiento</h3>
                     <section class="sectionDate">
                         <div class="divDate">
-                        <label for="date">
-                            <span class="spanDate">
-                                Fecha de Entrada
-                            </span>
-                        </label>
-                        <input type="date" name="dateEntrace" id="dateEntrace"  class="inputDate" required>
+                            <label for="date">
+                                <span class="spanDate">
+                                    Fecha de Entrada
+                                </span>
+                            </label>
+                            <div class="infoDate">
+                                <input type="date" name="dateEntrace" id="dateEntrace" class="inputDate" required>
+                                <p class="pDate" id="pDateEntrace"></p>
+                            </div>
                         </div>
                         <div class="divDate">
                             <label for="date">
@@ -94,16 +102,23 @@
                                     Fecha de Salida
                                 </span>
                             </label>
-                            <input type="date" name="dateExit" id="dateExit" class="inputDate"  required>
+                            <div class="infoDate">
+                                <input type="date" name="dateExit" id="dateExit" class="inputDate" disabled="true" required>
+                                <p class="pDate" id="pDateExit">as</p>
+                            </div>
                         </div>
                     </section>
+                    <div id="resultForm"></div>
+                    <button type="button" id="btnBooking">Reservar</button>
                 </div>
-                <div id="resultForm"></div>
-                <button type="button" id="btnBooking">Reservar</button>
             </form>
             <section id="confirmBooking">
                 <h3 id='titleBooking'>Reservas:</h3>
                 <div id="divtextbooking">
+                    <p id="textbooking"></p>
+                </div>
+                <div id="divClearBooks">
+                    <button id="clearBooks">Cancelar todas las Reservas</button>
                 </div>
             </section>
         </section>
@@ -142,7 +157,8 @@
             <p>Copyright © Todos los Derechos Reservados</p>
         </section>
     </footer>
-    <script src="./reservas.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../scripts/reservas.js"></script>
 </body>
 
 </html>
